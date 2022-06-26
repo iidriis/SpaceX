@@ -1,0 +1,77 @@
+.header{
+    
+    &__nav{
+        margin-top: 5.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__logo-img{
+        @include responsive (very-big-phone){
+            margin-right: 4rem;
+            margin-left: 40rem;
+        }
+    }
+
+    &__nav-list{
+        @include responsive(very-big-phone){
+            margin-left:0rem ;
+            margin-bottom:0rem;
+        }
+        margin-left: 34.6rem;
+        margin-right: 34.7rem;
+        display: flex;
+        list-style: none;
+        
+    }
+    &__burger-img{
+        display: none;
+        width: 30px;
+        height: 30px;
+            @include responsive (very-big-phone){
+                
+                display: inline-block;
+            }
+    }
+    &__nav-item{
+        cursor: pointer;
+        transition: 0.5s ease;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.16;
+        @include responsive (very-big-phone){
+            display: none;
+        }
+        
+    }
+    &__nav-item:hover{
+        color: rgb(112, 157, 255);
+    }
+    
+    &__nav-item:not(:last-child){
+        margin-right: 2rem;
+    }
+
+    &__second-nav-list{
+        @include responsive (very-big-phone){
+            display: none;
+        }
+        display: flex;
+        list-style-type: none;
+    }
+    &__second-item:not(last-child){
+        margin-right: 2rem;
+    }
+    &__second-item{
+        cursor: pointer;
+        transition: 0.5s ease;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.16;
+        color: $gray-color;
+    }
+    &__second-item:hover{
+        color: rgb(51, 78, 131);
+
+    }
+}
