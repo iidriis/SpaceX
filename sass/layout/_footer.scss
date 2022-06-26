@@ -1,0 +1,80 @@
+.footer{
+    padding-bottom: 5rem;
+    
+    padding-top: 5rem;
+    &__text-wrapper{
+        text-align: center;
+        h3{
+            margin-top: 3rem;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 1.16;
+            margin-bottom: 5rem;
+            color:$gray-color;
+        }
+        
+    }
+    &__list{
+        @include responsive (phone){
+            display: block;
+        }
+        margin-top: 1.5rem;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item{
+        margin-top: 3rem;
+        text-align: center;
+        a{
+            transition: 0.5s ease;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 1.16;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            margin-right: 2rem;
+        }
+        a:hover{
+            color: rgb(112, 157, 255);
+        }
+        a:active{
+            opacity: 0.5;
+        }
+    }
+    &__btn{
+        transition: 0.5s ease;
+
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.16;
+        color: white;
+        text-decoration: none;
+        border: 2px solid white;
+        border-radius: 0.6rem;
+        padding: 1.9rem 8.7rem;
+    }
+
+    &__btn:hover{
+        color: rgb(112, 157, 255);
+    }
+    &__btn:active{
+        opacity: 0.5;
+    }
+    &__video-star{
+        @include responsive (phone){
+            display: block;
+        }
+        display: none;
+        transform: rotate(90deg);
+        width: 1000px;
+        height: 500px;
+        opacity: 0.3;
+        position: absolute;
+        margin-left: -30rem;
+        margin-top: -50rem;
+    }
+
+}
