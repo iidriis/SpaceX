@@ -36,35 +36,76 @@
         width: 2rem;
     }
 &__main-bottom-text-wrapper{
-    margin-right: 0rem;
-    display: block;
+    @include responsive (phone){
+        margin-top: 10rem;
+    }
     margin-top: 30rem;
     h2{
+        @include responsive (phone){
+            text-align: center
+        }
         @include site-title;
         margin-bottom: 4.5rem;
     }
 }
 &__main-bottom-text-wrapper{
     @include responsive (phone){
-        margin: 0;
+        margin: 5rem;
     }
     ul:nth-child(4){
         li:nth-child(2){
+            @include responsive (phone){
+                border-bottom: 1px solid white;
+                margin: 0rem;
+            }
+            
             margin-left: 8rem;
         }
     }
     ul:nth-child(7){
         li:nth-child(2){
+            @include responsive (phone){
+                border-bottom: 1px solid white;
+                margin: 0rem;
+            }
+            
             margin-left: -1.2rem;
         }
     }
     ul:nth-child(3){
         li:nth-child(2){
+            @include responsive (phone){
+                border-bottom: 1px solid white;
+                margin: 0rem;
+            }
+            
             margin-left: 4.5rem;
         }
     }
     ul:nth-child(2){
         li:nth-child(2){
+            @include responsive (phone){
+                border-bottom: 1px solid white;
+                margin: 0rem;
+            }
+            margin-left: 6.5rem;
+        }
+    }
+    ul:nth-child(5){
+        li:nth-child(2){
+            @include responsive (phone){
+                border-bottom: 1px solid white;
+                margin: 0rem;
+            }
+            margin-left: 6.5rem;
+        }
+    }
+    ul:nth-child(6){
+        li:nth-child(2){
+            @include responsive (phone){
+                border-bottom: 1px solid white;
+                margin: 0rem;
+            }
             margin-left: 6.5rem;
         }
     }
@@ -76,11 +117,7 @@
     display: flex;
     img{
         @include responsive(phone){
-            opacity: 0.2;
-            position: absolute;
-            margin-left: -5rem;
-            width: 500px;
-            height: 800px;
+            display: none;
         }
         margin-left: 30rem;
         margin-top: -9rem;
@@ -90,13 +127,21 @@
 &__bottom-list{
     list-style: none;
     display: flex;
+    @include responsive (phone){
+        display: block;
+    }
     span{
         color: $gray-color;
     }
 }
 &__bottom-item{
+    @include responsive (phone){
+        
+        margin-right: 10rem;
+    }
     margin-right: 20rem;
 }
+
 
 &__second-text-wrapper{
     margin-top: 21rem;
